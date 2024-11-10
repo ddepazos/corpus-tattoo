@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
 });
 
-// Carrusel
+// Clase del carrusel
 class Carousel {
     constructor(element) {
         this.carousel = element;
@@ -120,6 +120,9 @@ class Carousel {
         this.updateDots();
         this.addEventListeners();
         this.setSlidePosition();
+
+        // Auto play
+        this.autoPlay();
     }
     
     createDots() {
@@ -165,9 +168,17 @@ class Carousel {
             this.updateDots();
         });
     }
+
+    autoPlay() {
+        setInterval(() => {
+            this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+            this.setSlidePosition();
+            this.updateDots();
+        }, 5000); // Cambia de slide cada 5 segundos
+    }
 }
 
-// Inicializar el carrusel cuando el DOM esté cargado
+// Inicializar el carrusel
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     if (carousel) {
