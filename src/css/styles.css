@@ -518,3 +518,32 @@ p {
 .theme-toggle-btn:hover {
     opacity: 0.8;
 }
+
+.contact-section {
+    background-image: url('/src/assets/img/backgrund/RUSTY\ ATTACK\ DEMO.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.cta-button {
+    background-color: #fe0808;  /* Color del logo */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
