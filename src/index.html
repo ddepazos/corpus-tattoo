@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Tatuajes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/dark-theme.css">
+    <link rel="stylesheet" href="./css/light-theme.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="/src/assets/logocorpus/conlinea.png" alt="Corpus Tatuajes Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle-btn">
+                        <i class="bi bi-sun-fill" id="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+      <main>
+          <section id="inicio" class="carousel">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/src/assets/img/sliders/slide1.png" class="d-block w-100" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/sliders/slide2.png" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/img/sliders/slide3.png" class="d-block w-100" alt="Slide 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+ <section id="nosotros" class="team-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestro Equipo</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg">
+                <div class="card h-100">
+                    <img src="/src/assets/img/team/redicido_Mesa de trabajo 1.png" class="card-img-top" alt="Artista 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Alex Rivera</h5>
+                        <p class="card-text">Especialista en Realismo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg">
+                <div class="card h-100">
+                    <img src="/src/assets/img/team/redicido-02.png" class="card-img-top" alt="Artista 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">María González</h5>
+                        <p class="card-text">Maestra en Acuarela</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg">
+                <div class="card h-100">
+                    <img src="/src/assets/img/team/redicido-03.png" class="card-img-top" alt="Artista 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Carlos Mendoza</h5>
+                        <p class="card-text">Experto en Old School</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg">
+                <div class="card h-100">
+                    <img src="/src/assets/img/team/redicido-04.png" class="card-img-top" alt="Artista 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laura Soto</h5>
+                        <p class="card-text">Especialista en Neotradicional</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg">
+                <div class="card h-100">
+                    <img src="/src/assets/img/team/redicido-03.png" class="card-img-top" alt="Artista 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Diego Vargas</h5>
+                        <p class="card-text">Maestro en BlackWork</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sección Foto Grupal y Descripción -->
+<section class="team-description py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="/src/assets/img/team/equipo.png" class="img-fluid rounded shadow" alt="Equipo Corpus Tatuajes">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-4">Somos Corpus Tatuajes</h3>
+                <p class="lead">Con más de 10 años de experiencia, nuestro estudio se ha convertido en referente del arte corporal en la región.</p>
+                <p>Nos especializamos en crear diseños únicos que reflejen la personalidad de cada cliente. Nuestro compromiso con la calidad, la higiene y la innovación nos distingue.</p>
+                <p>Cada miembro de nuestro equipo aporta su estilo único y experiencia, creando un ambiente donde el arte y la profesionalidad se encuentran.</p>
+            </div>
+        </div>
+    </div>
+<section id="galeria" class="gallery-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Mejores Trabajos</h2>
+        <div class="row g-3">
+            <!-- Imagen Grande -->
+            <div class="col-12 col-md-6">
+                <div class="gallery-item gallery-item-large">
+                    <img src="/src/assets/img/gallery1/1.png" class="img-fluid" alt="Tatuaje 1" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo1.jpg">
+                </div>
+            </div>
+            
+            <!-- Grupo de 2 Medianas -->
+            <div class="col-12 col-md-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="gallery-item">
+                            <img src="/src/assets/img/gallery1/2.png" class="img-fluid" alt="Tatuaje 2" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo2.jpg">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="gallery-item">
+                            <img src="/src/assets/img/gallery1/3.png" class="img-fluid" alt="Tatuaje 3" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tira de 4 Pequeñas -->
+            <div class="col-3">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/4.png" class="img-fluid" alt="Tatuaje 4" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo4.jpg">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/5.png" class="img-fluid" alt="Tatuaje 5" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo5.jpg">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/8.png" class="img-fluid" alt="Tatuaje 6" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo6.jpg">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/7.png" class="img-fluid" alt="Tatuaje 7" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo7.jpg">
+                </div>
+            </div>
+
+            <!-- Imagen Grande Horizontal -->
+            <div class="col-12">
+                <div class="gallery-item gallery-item-wide">
+                    <img src="/src/assets/img/gallery1/9.png" class="img-fluid" alt="Tatuaje 8" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo8.jpg">
+                </div>
+            </div>
+
+            <!-- Grupo Final de 6 -->
+            <div class="col-4">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/10.png" class="img-fluid" alt="Tatuaje 9" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo9.jpg">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/11.png" class="img-fluid" alt="Tatuaje 10" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo10.jpg">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="gallery-item">
+                    <img src="/src/assets/img/gallery1/12.png" class="img-fluid" alt="Tatuaje 11" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="./assets/gallery/tattoo11.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para vista ampliada -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+          <section id="contacto" class="contact-section">
+              <button class="cta-button">Contáctanos</button>
+              <div class="contact-form-modal" id="contactModal">
+                  <div class="modal-content">
+                      <span class="close-button">×</span>
+                      <form id="contactForm">
+                          <input type="text" name="nombre" placeholder="Nombre" required>
+                          <input type="email" name="email" placeholder="Email" required>
+                          <input type="tel" name="telefono" placeholder="Teléfono" required>
+                          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                          <div class="text-center">
+                              <button type="submit" class="btn btn-dark btn-lg">Enviar Mensaje</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </section>
+
+          <section class="map-section">
+              <div class="container-fluid p-0">
+                  <div class="row g-0">
+                      <div class="col-md-6">
+                          <div class="map-info p-4">
+                              <h3>Encuéntranos</h3>
+                              <p>Av. Siempreviva 742, Santiago</p>
+                              <p>Horario: Lunes a Sábado 11:00 - 20:00</p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="map-container">
+                              <iframe 
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.2868897562144!2d-70.6495878!3d-33.4375799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI2JzE1LjMiUyA3MMKwMzgnNTguNSJX!5e0!3m2!1ses!2scl!4v1629890000000!5m2!1ses!2scl" 
+                                  width="100%" 
+                                  height="300" 
+                                  style="border:0;" 
+                                  allowfullscreen="" 
+                                  loading="lazy">
+                              </iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Botón flotante de WhatsApp -->
+          <a href="https://wa.me/56942258179" class="whatsapp-float" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <!-- Footer con iconos -->
+          <footer class="footer-expanded">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <h5>Corpus Tatuajes</h5>
+                          <p>Arte y profesionalismo en cada diseño</p>
+                      </div>
+                      <div class="col-md-4">
+                          <h5>Horarios</h5>
+                          <p>Lunes a Sábado: 11:00 - 20:00</p>
+                          <p>Domingo: Cerrado</p>
+                      </div>
+                      <div class="col-md-4">
+                          <h5>Síguenos</h5>
+                          <div class="social-icons">
+
+
+
+                              <a href="#"><i class="bi bi-facebook"></i></a>
+                              <a href="#"><i class="bi bi-instagram"></i></a>
+                              <a href="#"><i class="bi bi-tiktok"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+
+          </footer>
+<script src="./js/carousel.js"></script>
+<script src="/src/js/form.js"></script>
+<script src="/src/js/main.js"></script>
+<script src="/src/js/menu.js"></script>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/theme.js"></script>

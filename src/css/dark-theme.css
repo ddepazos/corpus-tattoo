@@ -1,0 +1,28 @@
+[data-theme="dark"] {
+    --primary-color: #121212;
+    --secondary-color: #1f1f1f;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+}
+
+[data-theme="dark"] body {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .main-nav {
+    background: rgba(31, 31, 31, 0.95);
+}
+
+[data-theme="dark"] .nav-menu a {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .about-section {
+    background: var(--secondary-color);
+}
+
+[data-theme="dark"] .contact-form-modal {
+    background: var(--secondary-color);
+    color: var(--text-primary);
+}
